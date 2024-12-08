@@ -1,0 +1,1 @@
+ALTER TABLE `birthday` RENAME COLUMN "name" TO "authorId";

@@ -1,0 +1,9 @@
+{
+  "extends": "./.sern/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src/**/*.json"],
+}
