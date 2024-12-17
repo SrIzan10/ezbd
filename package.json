@@ -8,7 +8,7 @@
     "build": "sern build && bun copy:json",
     "docker:build": "mkdir -p db/kv && bun run build && bun db:migrate",
     "copy:json": "copyfiles -u 1 src/**/*.json dist/",
-    "start": "bun run ./src/index.ts",
+    "start": "bun db:migrate && bun run ./src/index.ts",
     "dev": "bun run build && bun run ./src/index.ts",
     "install": "sern build",
     "commands:publish": "sern commands publish",
